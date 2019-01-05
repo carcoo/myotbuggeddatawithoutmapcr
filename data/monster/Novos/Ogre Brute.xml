@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ogre Brute" nameDescription="a ogre brute" race="blood" experience="15500000" speed="500" manacost="0">
+	<health now="17000000" max="17000000" />
+	<look type="857" corpse="24799" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-1000000" max="-1100000" />
+		<attack name="fire" interval="2000" chance="100" range="7" min="-1000000" max="-1100000">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+	</defenses>
+	<elements>
+		<element energyPercent="-10" />
+		<element icePercent="10" />
+		<element firePercent="10" />
+	</elements>
+	<voices interval="3000" chance="50">
+		<voice sentence="You so juicy!" />
+		<voice sentence="You stop! You lunch!" />
+		<voice sentence="Smash you face in!!!" />
+		
+	</voices>
+	<loot>
+		<item id="2160" countmax="70" chance="100000" />	<!-- gold coin -->
+		<item id="12403" chance="6200" />					<!-- battle stone -->
+		<item id="2687" countmax="7" chance="6200" />					<!-- cookie -->
+		<item id="24844" chance="5200" />					<!-- ogre ear stud -->
+		<item id="24845" chance="1200" />					<!-- Ogre Nose Ring -->
+		<item id="24849" countmax="2" chance="3200" />					<!-- Onyx Chip -->
+		<item id="24850" countmax="3" chance="3200" />					<!-- Opal -->
+		<item id="7428" chance="500" />					<!-- Bonebreaker -->
+		<item id="25377" countmax="2" chance="10000" /><!-- gold Token -->
+	</loot>
+</monster>

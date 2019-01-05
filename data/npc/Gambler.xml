@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Gambler" script="gambler.lua" walkinterval="0" speed="100" walkradius="0" floorchange="0" speechbubble="2">
+	<health max="100" now="100"/>
+	<look type="132" head="57" body="59" legs="40" feet="76" addons="3" mount="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Greetings, |PLAYERNAME|. Let's Play!"/>
+	</parameters>
+</npc>

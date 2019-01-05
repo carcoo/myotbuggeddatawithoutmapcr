@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+	<category name="Items" state="1" icons="Category_NewProducts.png" description="Buy items">
+		<offer name="Mystic Buff" state="1" price="150" icons="Product_UsefulThings_CollectionTokens.png" description="This token is stolen by water kingdom from undead knights, it is able to buff your set with HP or MP percentage!" message="Thank you for buying this overpriced item." script="items.lua" />
+ 		<offer name="Mystic Buff Remover" state="1" price="150" icons="Product_UsefulThings_CollectionTokens.png" description="A dragon tear looks like a small, luminous gem, glittering in a golden light, it is able to remove mystic buffs!" message="Thank you for buying this overpriced item." script="items.lua" />
+        <offer name="Domination Curser" state="1" price="100" icons="Product_UsefulThings_CollectionTokens.png" description="It is able to upgrade domination set to the cursed one! (Stronger One)." message="Thank you for buying this overpriced item." script="items.lua" />
+	</category>
+ 	<category name="Transportation" icons="Category_Transportation.png" description="Use a transportation service to save time.">
+		<offer name="Temple Teleport" price="55" icons="Product_Transportation_TempleTeleport.png" description="Need a quick way home? Buy this transportation service to get instantly teleported to your home temple.&#10;&#10;Note, you cannot use this service while having a battle sign or a protection zone block. Further, the service will not work in no-logout zones or close to your home temple." message="Thank you for your purchase!&#10;You are now in your town temple." script="templeteleport.lua" /> 
+	</category>
+</store>

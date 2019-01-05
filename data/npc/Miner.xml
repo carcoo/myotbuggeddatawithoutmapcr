@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Miner" script="miningq.lua" walkinterval="2000" speed="100" walkradius="1" floorchange="0" speechbubble="1">
+	<health max="100" now="100"/>
+	<look type="430" head="79" body="0" legs="79" feet="0" addons="3" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, Monaki told me about you he told me about you , do you really think i will give you the golden scorpion pendant for free without doing a {mission}?"/>
+	</parameters>
+</npc>

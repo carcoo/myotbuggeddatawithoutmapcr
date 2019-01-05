@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deepling Spellsinger" nameDescription="a deepling spellsinger" race="blood" experience="33500000" speed="190" manacost="0">
+	<health now="900000000" max="900000000" />
+	<look type="443" corpse="15208" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="75" />
+		<flag runonhealth="60" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-1000000" max="-1100000" />
+		<attack name="ice" interval="3000" chance="10" length="10" spread="3" min="-1000000" max="-1100000">
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+		<attack name="drown" interval="2000" chance="20" target="1" radius="4" min="-1000000" max="-1100000">
+			<attribute key="areaEffect" value="bubbles" />
+		</attack>
+		<attack name="lifedrain" interval="3500" chance="15" range="7" min="-1000000" max="-1100000">
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+		<attack name="lifedrain" interval="5000" chance="10" range="7" min="-1000000" max="-1100000">
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+		<attack name="deepling spellsinger skill reducer" range="5" interval="2000" chance="60" />
+	</attacks>
+	<defenses armor="25" defense="25" />
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Jey Obu giotja!!" />
+		<voice sentence="Mmmmmoooaaaaaahaaa!!" />
+	</voices>
+	<elements>
+	</elements>
+	<loot>
+		<item id="25990" chance="200" /> <!-- platinum coin -->
+		<item id="2159" countmax="60" chance="100000" /> <!-- gold coin -->
+		<item id="25998" chance="200" /><!-- spellsinger's seal -->
+		<item id="25982" chance="200" /><!-- deepling filet -->
+		<item id="25974" chance="200" /><!-- key to the drowned library -->
+		<item id="25966" chance="200" /> <!-- fish -->
+		<item id="25994" chance="200" /><!-- small sapphire -->
+	</loot>
+</monster>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ferumbras" nameDescription="Ferumbras" race="venom" experience="6572500000" speed="520" manacost="0">
+	<health now="500000000" max="500000000" />
+	<look type="229" corpse="6078" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="2" />
+		<flag staticattack="98" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="700" min="-1600000" max="-1400000" />
+		<attack name="physical" interval="2000" chance="50" range="7" min="-1300000" max="-1400000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="physical" interval="2000" chance="55" length="8" spread="0" min="-1300000" max="-1400000">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+		<attack name="physical" interval="2000" chance="51" radius="6" target="0" min="-1300000" max="-1400000">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="poison" interval="2000" chance="55" range="7" min="-1300000" max="-1400000">
+			<attribute key="shooteffect" value="poison" />
+		</attack>
+		<attack name="physical" interval="2000" chance="55" target="0" radius="3" range="4" min="-1300000" max="-1400000" />
+		<attack name="physical" interval="2000" chance="58" radius="6" target="0" min="-1300000" max="-1400000">
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="physical" interval="3000" chance="50" range="7" radius="7" target="1" min="-1300000" max="-1400000">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="120">
+		<defense name="healing" interval="11000" chance="80" min="48000000" max="58000000">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="invisible" interval="4000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="20">
+		<voice sentence="NOONE WILL STOP ME THIS TIME!" yell="1" />
+		<voice sentence="THE POWER IS MINE!" yell="1" />
+		<voice sentence="I returned from death and you dream about defeating me?" />
+		<voice sentence="Witness the first seconds of my eternal world domination!" />
+		<voice sentence="Even in my weakened state I will crush you all!" />
+	</voices>
+	<loot>
+		<item id="5903" chance="1000" />				<!-- ferumbras' hat -->
+		<item id="9971" countmax="95" chance="100000" />	<!-- gold ingot -->
+		<item id="21401" countmax="3" chance="90000" />				<!-- golden armor -->
+		<item id="2470" chance="22000" />				<!-- golden legs -->
+		<item id="8902" chance="22000" />				<!-- spellbook of mind control -->
+		<item id="8868" chance="22000" />				<!-- velvet mantle -->
+		<item id="8885" chance="20000" />				<!-- divine plate -->
+		<item id="2542" chance="20000" />				<!-- tempest shield -->
+		<item id="2127" chance="18000" />				<!-- emerald bangle -->
+		<item id="7896" chance="18000" />				<!-- glacier kilt -->
+		<item id="7895" chance="18000" />				<!-- lightning legs -->
+		<item id="2539" chance="18000" />				<!-- phoenix shield -->
+		<item id="7632" countmax="5" chance="14000" />	<!-- giant shimmering pearl -->
+		<item id="7633" countmax="5" chance="14000" />	<!-- giant shimmering pearl -->
+		<item id="7410" chance="10000" />				<!-- queen's sceptre -->
+		<item id="2150" countmax="54" chance="10000" />	<!-- small amethyst -->
+		<item id="7423" chance="8000" />					<!-- skullcrusher -->
+		<item id="5944" countmax="9" chance="8000" />	<!-- soul orb -->
+	</loot>
+</monster>

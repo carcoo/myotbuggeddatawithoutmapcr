@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Askarak Demon" nameDescription="an askarak demon" race="venom" experience="9275000" speed="420" manacost="0">
+	<health now="8000000" max="8000000" />
+	<look type="420" corpse="13815" />
+        <level min="1" max="5" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-240000" max="-250000" />
+		<attack name="earth" interval="2000" chance="40" range="7" radius="6" target="0" min="-240000" max="-250000">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="earth" interval="2000" chance="45" target="0" length="4" spread="3" min="-240000" max="-250000">
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="earth" interval="2000" chance="40" target="0" length="4" spread="0" min="-240000" max="-250000">
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="15" />
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="POWER TO THE ASKARAK!" />
+		<voice sentence="GREEN WILL RULE!" />
+		<voice sentence="GREEN IS MEAN!" />
+		<voice sentence="ONLY WE ARE TRUE DEMONS!" />
+		<voice sentence="RED IS MAD" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="100" chance="100000" /><!-- gold coin -->
+		<item id="2149" countmax="4" chance="6250" /><!-- small emerald -->
+		<item id="7589" chance="5263" /><!-- strong mana potion -->
+		<item id="7588" chance="5263" /><!-- strong health potion -->
+		<item id="7368" countmax="5" chance="4761" /><!-- assassin star -->
+		<item id="2789" countmax="5" chance="3846" /><!-- brown mushroom -->
+		<item id="2114" chance="1052" /><!-- piggy bank -->
+		<item id="2167" chance="961" /><!-- energy ring -->
+		<item id="8912" chance="512" /><!-- springsprout rod -->
+		<item id="7440" chance="431" /><!-- mastermind potion -->
+		<item id="7885" chance="123" /><!-- terra legs -->
+		<item id="5904" chance="102" /><!-- magic sulphur -->
+	</loot>
+</monster>

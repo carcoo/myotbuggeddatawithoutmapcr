@@ -1,0 +1,22 @@
+rootowrm 0-500
+hydra 500-1000
+cycclops 1k-2k
+demon 2k-3k
+Draptor 3-5k
+orshabaal 5k-8k
+destroyer 8k-12k
+furious troll 12k-16k
+juggernaut 16k-20k
+kongra 20k-25k
+lost husher & basher 25k - 50k
+spitter 50k-75k
+lizard chosen 75k-100k
+metal gargoyle 100k-125k
+damaged crystal golem 125k-150k
+ragging mage 150k-200k
+ogre savage & brute 200k++
+deathstrike BOSS
+glooth slasher BOSS 
+hellflayer BOSS
+mad mage BOSS
+Gaz'haragoth BOSS

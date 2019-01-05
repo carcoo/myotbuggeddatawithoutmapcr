@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mad Mage" nameDescription="mad mage" race="blood" experience="5150000000" speed="600" manacost="0">
+	<health now="600000000" max="600000000" />
+	<look type="394" corpse="13603" />
+	<targetchange interval="5000" chance="30" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="2" />
+		<flag staticattack="90" />
+		<flag runonhealth="3000000" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="400" min="-1000000" max="-1000000" />
+		<attack name="energy" interval="1000" chance="100" range="6" radius="2" target="1" min="-1400000" max="-1700000">
+			<attribute key="shootEffect" value="explosion" />
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="100" range="6" target="1" min="-9000000" max="-9500000">
+		<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="70" range="6" target="1" min="-8000000" max="-9000000">
+		<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="90" radius="2" target="1" min="-2000000" max="-2100000">
+			<attribute key="areaEffect" value="bigclouds" />
+		</attack>
+		<attack name="energy" interval="2000" chance="70" radius="4" target="0" min="-1400000" max="-1700000">
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+	<defense name="healing" interval="8000" chance="100" min="160000000" max="170000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<voices interval="2000" chance="7">
+		<voice sentence="Did it not come to your mind that I placed them here for a reason?" />
+		<voice sentence="Now I have to create new servants! Do you want to spread this pest beyond these safe walls?" />
+		<voice sentence="What have you done!" />
+	</voices>
+	<loot>
+		<item id="21401" chance="5000" /><!-- remover  -->
+		<item id="24714" chance="5000" /><!-- upgrader  -->
+	    <item id="24115" chance="5000" /><!-- buffer  -->
+		<item id="2159" countmax="3" chance="100000" />	<!-- gold coin -->
+		<item id="11264" chance="15000" /><!-- tap  -->
+		<item id="24332" chance="1000" /><!-- doll  -->
+		<item id="13560" chance="8000" /><!-- doll  -->
+		<item id="2792" countmax="7" chance="900000" />		<!-- dark mushroom -->
+		<item id="5911" chance="80000" />						<!-- red piece of cloth -->
+		<item id="12410" chance="5000" />		<!-- luminous orb -->
+		<item id="6527" chance="7000" />
+	</loot>
+</monster>

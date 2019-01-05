@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crystal Golem" nameDescription="a crystal golem" race="energy" experience="6675000" speed="400" manacost="0">
+	<health now="8500000" max="8500000" />
+	<look type="508" corpse="18466" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	  <attacks>
+    <attack name="melee" interval="500" min="-500000" max="-510000" />
+	<attack name="energy" interval="3000" chance="90" target="1" range="7" radius="3" min="-500000" max="-510000">
+		<attribute key="areaEffect" value="energyarea" />
+		<attribute key="shootEffect" value="energyball" />
+     </attack>
+ 	</attacks>
+		<loot>
+		<item id="2160" countmax="80" chance="100000" />	<!-- gold coin -->
+		<item id="18419" countmax="4" chance="60000" />	<!-- gold coin -->
+		<item id="23588" chance="10000" /> <!-- green light -->
+		<item id="25379" countmax="2" chance="20000" /><!-- titanium Token -->
+	</loot>
+</monster>

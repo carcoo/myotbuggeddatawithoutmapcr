@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Glooth Slasher" nameDescription="a glooth slasher" race="blood" experience="4650000000" speed="270" manacost="490">
+	<health now="400000000" max="400000000" />
+	<look type="600" corpse="23343" />
+	<targetchange interval="4000" chance="80" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="1" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="1000000" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="400" min="-500000" max="-650000" />
+		<attack name="firecondition" interval="1000" chance="7" range="2" min="-500000" max="-650000">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="yellowspark" />
+		</attack>
+		<attack name="physical" interval="1000" chance="60" radius="6" target="0" min="-500000" max="-650000">
+			<attribute key="areaEffect" value="explosion" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="100" range="6" target="1" min="-8000000" max="-9000000">
+		<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="100" range="6" target="1" min="-8000000" max="-9000000">
+		<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="lifedrain" interval="900" chance="10" range="7" radius="2" target="1" min="-3500000" max="-4000000">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="fire" interval="1000" chance="60" length="5" spread="0" min="-500000" max="-650000">
+			<attribute key="areaEffect" value="explosion" />
+		</attack>
+		<attack name="lifedrain" interval="1400" chance="60" length="8" spread="0" min="-10000000" max="-10000000">
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+		<attack name="fire" interval="1000" chance="60" length="5" spread="3" min="-500000" max="-650000">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+	</attacks>
+	<defenses armor="165" defense="150">
+	<defense name="healing" interval="8000" chance="100" min="100000000" max="120000000">
+	<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	
+	<voices interval="2000" chance="7">
+		<voice sentence="Let's see if you can handle THIS!" />
+		<voice sentence="The world will bow before my brilliancy!" />
+		<voice sentence="You will perish!" />
+	</voices>
+	<loot>
+	    <item id="21401" chance="5000" /><!-- remover  -->
+		<item id="24714" chance="5000" /><!-- upgrader  -->
+	    <item id="24115" chance="5000" /><!-- buffer  -->
+		<item id="9971" countmax="2" chance="100000" />	<!-- gold coin -->
+		<item id="11264" chance="15000" /><!-- tap  -->
+		<item id="24332" chance="1000" /><!-- doll  -->
+		<item id="13569" chance="8000" /><!-- doll  -->
+		<item id="6527" chance="7000" />
+		<item id="21452" chance="5000" />		<!-- mind stone -->
+	</loot>
+</monster>

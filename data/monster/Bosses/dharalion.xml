@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dharalion" nameDescription="Dharalion" race="blood" experience="10000000" speed="240" manacost="0">
+	<health now="60000000" max="60000000" />
+	<look type="203" corpse="6011" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-450000" max="-550000" />
+		<attack name="energy" interval="500" chance="100" range="7" min="-450000" max="-550000">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="speed" interval="500" chance="13" range="7" radius="4" target="1" speedchange="-995" duration="100000">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="physical" interval="700" chance="20" range="7" min="-450000" max="-550000">
+			<attribute key="shootEffect" value="suddendeath" />
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="25">
+		<defense name="healing" interval="10000" chance="90" min="4000000" max="5000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity fire="1" />
+		<immunity poison="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Feel my wrath!" />
+		<voice sentence="Noone will stop my ascension!" />
+		<voice sentence="My powers are divine!" />
+	</voices>
+	<loot>
+		<item id="2159" countmax="5" chance="100000" /><!-- gold coin -->
+		<item id="22727" chance="5000" /><!-- elf's horn -->
+		<item id="22607" chance="5000" /><!-- crafting key golden -->
+	</loot>
+</monster>

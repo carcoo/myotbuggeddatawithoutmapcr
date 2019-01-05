@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drillworm" nameDescription="drillworm" race="venom" experience="12675000" speed="540" manacost="0">
+	<health now="10000000" max="10000000" />
+	<look type="527" corpse="19705" />
+        <level min="1" max="5" />
+	<targetchange interval="4000" chance="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="85" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="380000" max="-400000" />
+		<attack name="earth" interval="2000" chance="40" length="8" spread="0" min="-380000" max="-400000">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+		<attack name="earth" interval="2000" chance="45" radius="3" target="1" min="-380000" max="-400000">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="35" />
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Knarrrk!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="100" chance="100000" /><!-- Gold Coin -->
+		<item id="3976" countmax="5" chance="4580" /><!-- Worms -->
+		<item id="18436" countmax="2" chance="4870" /><!-- Drill Bolts -->
+		<item id="13757" chance="12130" /><!-- Coal -->
+		<item id="11222" chance="15000" /><!-- Lump of Earth -->
+		<item id="2553" chance="5280" /><!-- Pick -->
+		<item id="7887" chance="2360" /><!-- Terra Amulet -->
+		<item id="2515" chance="2240" /><!-- Dwarven Ring -->
+		<item id="18416" chance="9780" /><!-- green crystal splinter -->
+		<item id="18417" chance="9260" /><!-- brown crystal splinter -->
+		<item id="18418" chance="9610" /><!-- blue crystal splinter -->
+	</loot>
+</monster>

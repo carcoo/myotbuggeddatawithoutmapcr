@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ogre Savage" nameDescription="a ogre savage" race="blood" experience="15500000" speed="400" manacost="0">
+	<health now="17000000" max="17000000" />
+	<look type="858" corpse="24803" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-1000000" max="-1100000" />
+		<attack name="fire" interval="2000" chance="100" range="7" min="-1000000" max="-1100000">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+	</defenses>
+	<elements>
+		<element energyPercent="-10" />
+		<element icePercent="10" />
+		<element firePercent="10" />
+	</elements>
+	<voices interval="3000" chance="50">
+		<voice sentence="Must! Chop! Food! Raahh!" />
+		<voice sentence="You tasty!" />
+				
+	</voices>
+	<loot>
+		<item id="2160" countmax="60" chance="100000" />	<!-- gold coin -->
+		<item id="24849" countmax="2" chance="3200" />					<!-- Onyx Chip -->
+		<item id="24850" countmax="3" chance="3200" />					<!-- Opal -->
+		<item id="2687" countmax="7" chance="2200" />					<!-- Cookies -->		
+		<item id="8844" countmax="2" chance="1200" />					<!-- jappenno -->
+		<item id="9970" countmax="2" chance="1200" />					<!-- small topaz -->				
+		<item id="24844" chance="1200" />					<!-- Ogre Ear Stud -->		
+		<item id="24845" chance="1200" />					<!--   Ogre Nose Ring -->
+		<item id="23876" chance="10000" /><!-- green sulphur -->
+	</loot>
+</monster>

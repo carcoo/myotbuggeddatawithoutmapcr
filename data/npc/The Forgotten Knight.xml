@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="The Forgotten Knight" script="tasksystem.lua" walkinterval="0" speed="100" walkradius="0" floorchange="0">
+	<health max="150" now="150"/>
+	<look type="493" head="0" body="0" legs="0" feet="0" addons="2" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I'm in charge of delivering missions to the players. Would you like to do a {normal} task, {daily} task, {receive} your reward from a task or {abandon} a task ? You can also see the {normal task list} and the {daily task list}."/>
+		<parameter key="message_farewell" value="See you later."/>
+		<parameter key="message_walkaway_male" value="See you later."/>
+		<parameter key="message_walkaway_female" value="See you later."/>
+	</parameters>
+</npc>

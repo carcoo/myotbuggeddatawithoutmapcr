@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Obujos" nameDescription="Obujos" race="blood" experience="4650000000" speed="560" manacost="0">
+	<health now="750000000" max="750000000" />
+	<look type="445" corpse="15224" />
+	<targetchange interval="2000" chance="50" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag runonhealth="60" />
+		<flag staticattack="90" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="700" min="-800000" max="-850000" poison="360" />
+		<attack name="death" interval="3000" chance="60" range="7" radius="7" target="1" min="-800000" max="-850000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="physical" interval="3500" chance="60" range="7" radius="6" target="1" min="-800000" max="-850000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="bigclouds" />
+		</attack>
+		<attack name="physical" interval="2000" chance="60" range="7" radius="1" target="1" min="-800000" max="-850000">
+			<attribute key="shootEffect" value="poisonarrow" />
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="physical" interval="1200" chance="60" length="8" spread="0" min="-800000" max="-850000">
+			<attribute key="areaEffect" value="giantice" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="60" length="8" spread="3" min="-800000" max="-850000">
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="8000" chance="100" min="90000000" max="100000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+<!-- 	<immunities> 
+		<immunity ice="1" />
+		<immunity paralyze="1" />
+		<immunity drown="1" />
+		<immunity fire="1" />
+		<immunity invisible="1" />
+	</immunities> -->
+	<voices interval="3000" chance="200">
+		<voice sentence="JN OBU!!" />
+		<voice sentence="QJELL KEJH!!" />
+	</voices>
+	<loot>
+		<item id="13165" chance="8000" /><!-- doll  -->
+		<item id="11264" chance="50000" /><!-- tap  -->
+		<item id="21401" chance="100000" /><!-- remover  -->
+		<item id="24714" chance="100000" /><!-- upgrader  -->
+		<item id="24115" chance="37500" /><!-- buffer  -->
+	</loot>
+</monster>

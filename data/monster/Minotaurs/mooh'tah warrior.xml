@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mooh'Tah Warrior" nameDescription="a mooh'tah warrior" race="blood" experience="33500000" speed="500" manacost="0">
+	<health now="23000000" max="23000000" />
+	<look type="611" corpse="23462" />
+	<targetchange interval="2000" chance="4" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-1050000" max="-1250000" />
+		<attack name="energy" interval="1000" chance="40" length="4" spread="0" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="yellowenergy" />
+		</attack>
+		<attack name="physical" interval="1000" chance="50" range="7" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="explosionarea" />
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+		<attack name="physical" interval="1000" chance="40" radius="3" target="0" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="mooh'tah master skill reducer" interval="2000" chance="19" range="7" />
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="haste" interval="2000" chance="8" speedchange="220" duration="1000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="1" />
+		<element firePercent="1" />
+		<element energyPercent="3" />
+		<element icePercent="10" />
+		<element earthPercent="1" />
+		<element deathPercent="1" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Feel the power of the Mooh'Tah!" />
+		<voice sentence="Ommm!" />
+		<voice sentence="I am at peace and you are dead!" />
+		<voice sentence="There is no rage, there is only control!" />
+		<voice sentence="You will not disrupt my inner balance!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="90" chance="100000" />	<!-- gold coin -->
+		<item id="23573" countmax="1" chance="15030" />		<!-- mooh'tah shell -->
+		<item id="9970" countmax="1" chance="4760" />		<!-- small topaz -->
+		<item id="12428" countmax="2" chance="4710" />		<!-- minotaur horn -->
+		<item id="7401" chance="150" />						<!-- minotaur trophy -->
+	</loot>
+</monster>

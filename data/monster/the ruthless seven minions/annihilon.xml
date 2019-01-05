@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Annihilon" nameDescription="Annihilon" race="fire" experience="15650000000" speed="380" manacost="0">
+	<health now="1100000000" max="1100000000" />
+	<look type="12" head="19" body="104" legs="96" feet="96" corpse="8721" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="98" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="600" min="-5000000" max="-51000000" />
+		<attack name="death" interval="2000" chance="40" length="8" spread="0" min="5000000" max="-51000000">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="death" interval="2000" chance="50" target="0" radius="4" min="-5000000" max="-51000000">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="physical" interval="3000" chance="40" radius="5" target="1" min="-5000000" max="-51000000">
+			<attribute key="areaEffect" value="groundshaker" />
+		</attack>
+		<attack name="fire" interval="2000" chance="50" radius="6" target="1" min="-5000000" max="-51000000">
+			<attribute key="areaEffect" value="firearea" />
+			<attribute key="shootEffect" value="fire" />
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="55">
+		<defense name="healing" interval="8000" chance="70" min="210000000" max="215000000">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="speed" interval="1000" chance="4" speedchange="500" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="20" />
+		<element energyPercent="95" />
+		<element deathPercent="95" />
+		<element holyPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Flee as long as you can!" />
+		<voice sentence="Annihilon's might will crush you all!" />
+		<voice sentence="I am coming for you!" />
+	</voices>
+	<loot>
+		<item id="9971" countmax="100" chance="100000" /> <!-- Platinum Coin -->
+		<item id="9971" countmax="50" chance="50000" /> <!-- Crystal Coins -->
+		<item id="24115" countmax="3" chance="90000" /> <!-- Platinum Coin -->
+		<item id="15408" countmax="1" chance="20000" /> <!-- Crystal Coins -->
+		<item id="7632" chance="38940" />					<!-- giant shimmering pearl -->
+		<item id="7633" chance="38940" />					<!-- giant shimmering pearl -->
+		<item id="2452" chance="28320" />					<!-- heavy mace -->
+		<item id="2515" chance="7520" />						<!-- guardian shield -->
+		<item id="2514" chance="3980" />						<!-- mastermind shield -->
+		<item id="2520" chance="3540" />						<!-- demon shield -->
+		<item id="7431" chance="1770" />						<!-- demonbone -->
+		<item id="8877" chance="1330" />						<!-- lavos armor -->
+		<item id="8928" chance="1330" />						<!-- obsidian truncheon -->
+		<item id="8929" chance="440" />						<!-- the stomper -->
+	</loot>
+</monster>

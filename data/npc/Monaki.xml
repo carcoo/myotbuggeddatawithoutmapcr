@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Monaki" script="monakiq.lua" walkinterval="2000" speed="100" walkradius="1" floorchange="0" speechbubble="2">
+	<health max="100" now="100"/>
+	<look type="253" head="114" body="114" legs="94" feet="94" addons="3" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, you don't know me ? I'am the brother of {The Lost Wizard} He told me how you helped him I'am here just to give you your extra prize specially made by me but are you able to {find} the pendant to do this item for you?"/>
+	</parameters>
+</npc>

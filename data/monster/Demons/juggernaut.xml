@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Juggernaut" nameDescription="a juggernaut" race="blood" experience="280000" speed="400" manacost="0">
+	<health now="90000" max="90000" />
+	<look type="244" corpse="6336" />
+	<targetchange interval="500" chance="3" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-30000" max="-35000" />
+		<attack name="physical" interval="500" chance="60" range="7" min="-30000" max="-35000">
+			<attribute key="shootEffect" value="largerock" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="44" defense="59">
+	</defenses>
+	<elements>
+		<element physicalPercent="10" />
+		<element firePercent="30" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+		<element energyPercent="-10" />
+		<element holyPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="500" chance="5">
+		<voice sentence="WAHHHH!" />
+		<voice sentence="RAAARRR!" />
+		<voice sentence="GRRRRRR!" />
+	</voices>
+	<loot>
+		<item id="2136" chance="170" /><!-- demonbone amulet -->
+		<item id="2578" chance="330" /><!-- closed trap -->
+		<item id="2160" countmax="70" chance="90000" /><!-- gold coin -->
+		<item id="2671" countmax="8" chance="71710" /><!-- ham -->
+		<item id="5944" chance="3270" /><!-- soul orb -->
+	</loot>
+</monster>

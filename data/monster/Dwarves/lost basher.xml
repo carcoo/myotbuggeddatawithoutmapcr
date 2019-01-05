@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Basher" nameDescription="a lost basher" race="blood" experience="900000" speed="500" manacost="0">
+	<health now="500000" max="500000" />
+	<look type="538" corpse="19963" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-110000" max="-111000"/>
+		<attack name="physical" interval="500" chance="15" range="7" target="1" radius="3" min="-110000" max="-111000">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30">
+	</defenses>
+	<elements>
+		<element deathPercent="1" />
+		<element icePercent="1" />
+		<element energyPercent="15" />
+		<element firePercent="40" />
+	</elements>
+	<voices interval="500" chance="7">
+		<voice sentence="Yhouuuu!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="90" chance="60000" /><!-- Gold Coin -->
+		<item id="2152" countmax="2" chance="70000" /><!-- Platinum Coin -->
+		<item id="2789" countmax="2" chance="15170" /><!-- Brown Mushroom -->
+		<item id="20136" chance="8800" /><!-- Basalt Fetish -->
+	</loot>
+</monster>

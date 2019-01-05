@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deepling Guard" nameDescription="a deepling guard" race="blood" experience="83900000" speed="520" manacost="390">
+	<health now="47000000" max="47000000" />
+	<look type="442" corpse="15187" />
+        <level min="1" max="5" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-2800000" max="-3000000" />
+		<attack name="physical" interval="2000" chance="40" range="7" target="1" min="-2800000" max="-3000000">
+			<attribute key="shootEffect" value="whirlwindsword" />
+		</attack>
+		<attack name="drown" interval="2000" chance="50" range="7" target="1" min="-2800000" max="-3000000">
+			<attribute key="shootEffect" value="spear" />
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="35">
+	</defenses>
+	<elements>
+	</elements>
+		<immunities>
+		<immunity drown="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+		</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="QJELL NETA NA!!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="90" chance="100000" /> <!-- gold coin -->
+		<item id="2148" countmax="90" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="2" chance="70000" /> <!-- platinum coin -->
+		<item id="13870" chance="10000" /><!-- eye of a deepling -->
+		<item id="15455" chance="9090" /><!-- deepling claw -->
+		<item id="2146" countmax="3" chance="890" /><!-- small sapphire -->
+		<item id="13838" chance="694" /> <!-- heavy trident -->
+		<item id="15647" chance="351" /> <!-- deepling squelcher -->
+		<item id="15644" chance="162" /> <!-- ornate crossbow -->
+		<item id="15545" chance="60" /> <!-- foxtail -->
+	</loot>
+</monster>

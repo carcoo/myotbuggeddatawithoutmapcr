@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Abyssador" nameDescription="Abyssador" race="blood" experience="4650000000" speed="500" manacost="0">
+	<health now="750000000" max="750000000" />
+	<look type="495" corpse="17412" />
+	<targetchange interval="5000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-1000000" max="-1200000" />
+		<attack name="energy" interval="1000" chance="65" radius="4" target="0" min="-2000000" max="-2100000">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+		<attack name="energy" interval="2000" chance="65" radius="4" target="0" min="-2000000" max="-2100000">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="poison" interval="1000" chance="65" length="5" spread="2" min="-2000000" max="-2100000">
+			<attribute key="areaEffect" value="plantattack" />
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="20">
+		<defense name="invisible" interval="2000" chance="15" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="15" />
+		<element firePercent="15" />
+		<element energyPercent="15" />
+		<element icePercent="15" />
+		<element physicalPercent="10" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity earth="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="*** STEALTH ***" />
+		<voice sentence="*** TIME ***" />
+		<voice sentence="*** IMPORTANT ***" />
+		<voice sentence="*** BRAINS *** SMALL ***" />
+		<voice sentence="*** DEATH ***" />
+		<voice sentence="*** FIRE *** HOME *** VICTORY ***" />
+		<voice sentence="*** EXISTENCE *** FUTILE ***" />
+	</voices>
+	<loot>
+		<item id="18496" chance="100000" />	<!-- abyssador's lash -->
+	</loot>
+</monster>

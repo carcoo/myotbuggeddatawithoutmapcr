@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crawler" nameDescription="a crawler" race="venom" experience="15675000" speed="430" manacost="0">
+	<health now="11500000" max="11500000" />
+	<look type="456" corpse="15292" />
+        <level min="1" max="5" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="85" />
+		<flag runonhealth="40" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-600000" max="-610000" />
+		<attack name="earth" interval="2000" chance="50" range="7" min="-600000" max="-610000">
+			<attribute key="shootEffect" value="smallearth" />
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="speed" interval="2000" chance="15" speedchange="260" duration="3000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Sssschrchrsss!" />
+		<voice sentence="Chrssschrsss!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="100" chance="100000" />	<!-- gold coin -->
+		<item id="2152" chance="50000" />					<!-- platinum coin -->
+		<item id="9970" countmax="2" chance="10040" />		<!-- small topaz -->
+		<item id="7590" chance="8900" />						<!-- great mana potion -->
+		<item id="7591" chance="6100" />						<!-- great health potion -->
+		<item id="2391" chance="1800" />						<!-- war hammer -->
+		<item id="8912" chance="640" />						<!-- springsprout rod -->
+		<item id="2154" chance="460" />						<!-- yellow gem -->
+	</loot>
+</monster>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Crafting Tasks Manager" script="missions.lua" walkinterval="2000" walkradius="0" floorchange="0">
+     <health now="100" max="100"/>
+     <look type="471" head="59" body="132" legs="0" feet="57" addons="0"/>
+     <parameters>
+         <parameter key="message_greet" value="Hello |PLAYERNAME|, I'am giving missions to those who are intrested in crafting for rare items needed to continue crating, take your first {mission} now."/>
+     </parameters>
+</npc>

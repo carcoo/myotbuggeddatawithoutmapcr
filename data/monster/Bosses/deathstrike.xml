@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deathstrike" nameDescription="Deathstrike" race="blood" experience="4950000000" speed="470" manacost="0">
+	<health now="700000000" max="700000000" />
+	<look type="500" corpse="18384" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="90" />
+		<flag runonhealth="2000" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="400" min="-900000" max="-950000" />
+		<attack name="fire" interval="1300" chance="90" range="7" min="-700000" max="-800000">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="physical" interval="1700" chance="60" length="8" spread="0" min="-90000000" max="-95000000">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="100" range="8" target="1" min="-900000000" max="-95000000">
+			<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="lifedrain" interval="900" chance="10" range="8" target="1" min="-1000000" max="-1500000">
+			<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="manadrain" interval="500" chance="100" range="8" target="1" min="-90000000" max="-95000000">
+			<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="physical" interval="2100" chance="60" radius="5" target="0" min="-700000" max="-800000">
+			<attribute key="areaEffect" value="greensmoke" />
+		</attack>
+		<attack name="physical" interval="2500" chance="60" radius="5" target="0" min="-700000" max="-800000">
+			<attribute key="areaEffect" value="thunder" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="8000" chance="100" min="170000000" max="180000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<voices interval="2000" chance="7">
+		<voice sentence="Deeestructiooon!" />
+		<voice sentence="Maaahhhrrr!" />
+		<voice sentence="I am carnage incarnate!" />
+		<voice sentence="I've seen the light! And it was all engulfing fire!" />
+		<voice sentence="Taaake... this!" />
+	</voices>
+	<loot>
+		<item id="21401" chance="5000" /><!-- remover  -->
+		<item id="24714" chance="5000" /><!-- upgrader  -->
+	    <item id="24115" chance="5000" /><!-- buffer  -->
+		<item id="11264" chance="15000" /><!-- tap  -->
+		<item id="24332" chance="1000" /><!-- doll  -->
+		<item id="11207" chance="8000" /><!-- doll  -->
+		<item id="9971" countmax="3" chance="100000" />
+		<item id="18430" chance="5000" />	<!-- deathstrike's snippets -->
+		<item id="18421" countmax="8" chance="70000" />
+		<item id="6527" chance="7000" />
+	</loot>
+</monster>

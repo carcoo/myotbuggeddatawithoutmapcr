@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tanjis" nameDescription="Tanjis" race="blood" experience="33500000" speed="560" manacost="0">
+	<health now="250000000" max="250000000" />
+	<look type="446" corpse="15228" />
+	<targetchange interval="2000" chance="50" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+		<flag staticattack="90" />
+	</flags>
+
+	<attacks>
+		<attack name="melee" interval="1000" min="-600000" max="-650000" />
+		<attack name="physical" interval="2500" chance="50" range="7" radius="4" target="1" min="-600000" max="-650000">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="carniphila" />
+		</attack>
+		<attack name="ice" interval="3500" chance="50" range="7" radius="4" target="1" min="-600000" max="-650000">
+			<attribute key="shootEffect" value="ice" />
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="ice" interval="3500" chance="50" range="1" radius="1" target="1" min="-600000" max="-650000" />
+		<attack name="drown" interval="2300" chance="50" range="7" radius="4" target="1" min="-600000" max="-650000">
+			<attribute key="shootEffect" value="ice" />
+			<attribute key="areaEffect" value="watersplash" />
+		</attack>
+		<attack name="manadrain" interval="2300" chance="50" range="7" radius="7" target="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="bubbles" />
+		</attack>
+		<attack name="physical" interval="2000" chance="50" range="7" radius="1" target="1" min="-600000" max="-650000">
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+		<attack name="death" interval="1200" chance="50" length="8" spread="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="energy" interval="2000" chance="50" length="8" spread="3" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="speed" interval="2150" chance="16" range="7" radius="1" target="1" speedchange="-600" duration="15000" />
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="3000" chance="40" min="80000" max="110000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="3000" chance="200">
+		<voice sentence="JAUL QJELL, JAKNH JEH KENH!!" />
+	</voices>
+	<loot>
+		<item id="13565" chance="5000" /><!-- doll  -->
+		<item id="11264" chance="15000" /><!-- tap  -->
+		<item id="21401" chance="15000" /><!-- remover  -->
+	</loot>
+</monster>

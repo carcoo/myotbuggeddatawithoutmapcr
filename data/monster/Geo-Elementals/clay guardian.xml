@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Clay Guardian" nameDescription="a clay guardian" race="undead" experience="76900000" speed="610" manacost="0">
+	<health now="42000000" max="42000000" />
+	<look type="333" corpse="13972" />
+        <level min="1" max="5" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-2300000" max="-2500000" />
+		<attack name="earth" interval="2000" chance="50" range="7" min="-2300000" max="-2500000">
+			<attribute key="shootEffect" value="smallearth" />
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="earth" interval="2000" chance="40" target="0" radius="3" min="-2300000" max="-2500000">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="2000" chance="37" min="1000000" max="2000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="2160" countmax="70" chance="100000" /><!-- gold coin -->
+		<item id="2148" countmax="63" chance="50000" /><!-- gold coin -->
+		<item id="11222" chance="25000" /><!-- lump of earth -->
+		<item id="2260" chance="25000" /><!-- blank rune -->
+		<item id="1294" countmax="10" chance="10000" /><!-- small stone -->
+		<item id="7850" countmax="8" chance="5555" /><!-- earth arrow -->
+		<item id="11339" chance="1100" /><!-- clay lump -->
+		<item id="9970" chance="320" /><!-- small topaz -->
+	</loot>
+</monster>

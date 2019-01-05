@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+<!-- <globalevent name="GuildFrags" interval="1800" event="script" value="GuildFragsInfo.lua"/>
+ --><globalevent name="War of Emperium" time="23:00" script="woe.lua"/>
+    <globalevent type="startup" name="CleanHouses" script="cleanhouses.lua" />
+	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
+    <globalevent name="vip" interval="10000" script="vip.lua" />
+    <globalevent name="svip" interval="10000" script="svip.lua" />
+    <globalevent name="tutoreffect" interval="6500" script="tutor.lua" />
+    <globalevent name="stutoreffect" interval="6500" script="stutor.lua" />
+    <globalevent name="looterc" interval="4000" script="looterc.lua" />
+    <globalevent name="Znote Shop" interval="10000" script="znoteShop.lua"/>
+    <globalevent name="text" interval="3500" script="text.lua"/>
+    <globalevent name="firestorm_event" interval="36000000" script="fs.lua"/>
+  	<globalevent name="Last Man Standing" interval="42000000" script="lms.lua"/>
+	<globalevent name="Zombie Arena" interval="86400000" script="zombie_arena.lua" />
+	<globalevent name="Clean" interval="7200000" script="clean.lua" />
+	<globalevent name="Broadcast" interval="3600000" script="broadcast.lua" />
+	<globalevent type="record" name="PlayerRecord" script="record.lua" />
+    <globalevent name="trivia" interval="21000000" script="trivia.lua"/>
+    <globalevent name="Lottery" interval="7200000" script="lottery.lua"/>
+	<globalevent name="Server Save" time="9:55:00" script="serversave.lua" />
+	<!--
+	<globalevent name="timer_example" time="12:00:00" script="my_script.lua" />
+	-->
+</globalevents>

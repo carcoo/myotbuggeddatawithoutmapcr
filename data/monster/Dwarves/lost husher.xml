@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Husher" nameDescription="a lost husher" race="blood" experience="900000" speed="500" manacost="0">
+	<health now="500000" max="500000" />
+	<look type="537" corpse="19964" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-50000" max="-52000"/>
+		<attack name="death" interval="800" chance="50" length="6" spread="0" min="-50000" max="-52000">
+			<attribute key="areaEffect" value="blacksmoke" />
+		</attack>
+		<attack name="death" interval="1000" chance="50" range="7" min="-50000" max="-52000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="earth" interval="700" chance="50" range="7" target="1" radius="2" min="-50000" max="-52000">
+			<attribute key="shootEffect" value="smallearth" />
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+	</defenses>
+	<elements>
+		<element holyPercent="5" />
+		<element icePercent="5" />
+		<element energyPercent="5" />
+		<element physicalPercent="5" />
+		<element firePercent="5" />
+		<element deathPercent="5" />
+	</elements>
+	<voices interval="500" chance="7">
+		<voice sentence="Arr far zwar!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="70" chance="50000" /><!-- Gold Coin -->
+		<item id="2789" countmax="2" chance="14920" /><!-- Brown Mushroom -->
+		<item id="20127" chance="8950" /><!-- Lost Husher's Staff -->
+		<item id="20134" chance="15580" /><!-- Red Hair Dye -->
+	</loot>
+</monster>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Jaul" nameDescription="Jaul" race="blood" experience="33500000" speed="560" manacost="0">
+	<health now="250000000" max="250000000" />
+	<look type="444" corpse="15220" />
+	<targetchange interval="2000" chance="50" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+		<flag staticattack="90" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="1000" min="-600000" max="-650000" poison="870" />
+		<attack name="fire" interval="2200" chance="50" range="7" radius="7" target="1" min="-600000" max="-650000">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="physical" interval="3000" chance="50" range="7" radius="7" target="1" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="physical" interval="1300" chance="50" radius="3" target="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+		<attack name="physical" interval="1200" chance="60" length="8" spread="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="physical" interval="1000" chance="50" length="8" spread="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="fire" />
+		</attack>
+		<attack name="physical" interval="1000" chance="50" length="8" spread="0" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="50" length="8" spread="3" min="-600000" max="-650000">
+			<attribute key="areaEffect" value="watersplash" />
+		</attack>
+		<attack name="speed" interval="1900" chance="14" range="7" radius="1" target="1" speedchange="-600" duration="15000" />
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="3000" chance="40" min="80000" max="110000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="3000" chance="200">
+		<voice sentence="QJELL AFAR GOU JEY!!" />
+		<voice sentence="DIE!! KENH!!" />
+	</voices>
+	<loot>
+		<item id="13571" chance="5000" /><!-- doll -->
+		<item id="11264" chance="10000" /><!-- tap  -->
+		<item id="24115" chance="15000" /><!-- buffer  -->
+		<item id="24714" chance="15000" /><!-- upgrader  -->
+	</loot>
+</monster>

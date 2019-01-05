@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deepling Elite" nameDescription="a deepling elite" race="blood" experience="8650000000" speed="500" manacost="0">
+	<health now="850000000" max="850000000" />
+	<look type="441" corpse="15176" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag staticattack="98" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-4700000" max="-4900000" />
+		<attack name="physical" interval="2000" chance="40" length="10" spread="3" min="-4700000" max="-4900000">
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+		<attack name="drown" interval="2000" chance="50" target="1" radius="4" min="-4700000" max="-4900000">
+			<attribute key="areaEffect" value="bubbles" />
+		</attack>
+		<attack name="physical" interval="2000" chance="40" range="7" min="-4700000" max="-4900000">
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="50" range="7" min="-4700000" max="-4900000">
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+		<attack name="deepling spellsinger skill reducer" range="5" interval="2000" chance="10" />
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="8000" chance="70" min="200000000" max="205000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<loot>
+		<item id="9971" countmax="100" chance="100000" /> <!-- Platinum Coin -->
+		<item id="9971" countmax="30" chance="50000" /> <!-- Crystal Coins -->
+		<item id="11259" countmax="1" chance="50000" /> <!-- Platinum Coin -->
+		<item id="24714" countmax="1" chance="50000" /> <!-- Crystal Coins -->
+		<item id="15425" chance="5000" /> <!-- deepling warts -->
+		<item id="7591" chance="5000" /> <!-- great health potion -->
+		<item id="13870" chance="5000" /><!-- eye of a deepling -->
+		<item id="15649" countmax="5" chance="24000" /> <!-- vortex bolt -->
+		<item id="2168" chance="1360" /> <!-- life ring -->
+		<item id="2149" countmax="2" chance="1290" /> <!-- small emerald -->
+		<item id="13838" chance="580" /> <!-- heavy trident -->
+		<item id="5895" chance="700" /><!-- fish fin -->
+		<item id="15453" chance="434" /><!-- warrior's shield -->
+		<item id="15451" chance="240" /><!-- warrior's axe -->
+	</loot>
+</monster>

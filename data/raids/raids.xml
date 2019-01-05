@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raids>
+	
+		<raid name="Obujos" file="obujos.xml" interval2="720" margin="0" />
+		<!-- executed on average once every 30 minutes -->
+	
+</raids>

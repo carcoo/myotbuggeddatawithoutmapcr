@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Raging mage" nameDescription="raging mage" race="blood" experience="4450000" speed="230" manacost="0">
+	<health now="7500000" max="7500000" />
+	<look type="416" corpse="13834" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-300000" max="-320000" />
+		<attack name="thunderstorm" interval="1200" chance="35" range="7" target="1" min="-300000" max="-320000" />
+		<attack name="manadrain" interval="1000" chance="15" range="7" min="-300000" max="-320000" />
+	</attacks>
+	<defenses armor="25" defense="25" />
+	<elements>
+		<element physicalPercent="0" />
+		<element deathPercent="0" />
+	</elements>
+	<voices interval="500" chance="7">
+		<voice sentence="Behold the all permeating powers I draw from this gate!!" />
+		<voice sentence="ENERGY!!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="80" chance="100000" />	<!-- gold coin -->
+		<item id="2178" chance="9760" />					<!-- mind stone -->
+		<item id="7443" countmax="2" chance="6710" />	<!-- bullseye potion -->
+		<item id="8871" chance="4880" />					<!-- focus cape -->
+		<item id="2165" chance="4880" />					<!-- stealth ring -->
+		<item id="21699" chance="10000" /><!-- trapped lightining -->
+		<item id="25380" countmax="2" chance="20000" /><!-- white gold Token -->
+	</loot>
+</monster>

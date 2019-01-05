@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Emperium" nameDescription="emperium" race="undead" experience="0" speed="0">
+	<health now="1500000000" max="1500000000" />
+	<look typeex="18459" corpse="18459" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<script>
+		<event name="hpChange" />
+	</script>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="0" />
+	</attacks>
+	<defenses armor="1" defense="1" />
+	<elements>
+		<element physicalPercent="50" />
+		<element icePercent="50" />
+		<element poisonPercent="50" />
+		<element firePercent="50" />
+		<element deathPercent="50" />
+		<element holyPercent="50" />
+	</elements>
+	<immunities>
+		<immunity death="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+	</voices>
+</monster>

@@ -1,0 +1,26 @@
+----- 02/12/2018 17:18:47 - Admin Carcoo (127.0.0.1) -----
+Debug Assertion 10.98 Container.h 230
+Sun Dec 02 17:17:37 2018
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in USA
+Processor: Intel Core i7 -3520M @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 133 133 133 133 133 133 133 133 133 133
+Last Packet: 133 232 003 232 003 007 225 003 227 003 007 060 133 232 003 232
+Player Position: [1000,1000,7]
+Player Name: Admin Carcoo (Forgotten)
+Player Action: 048 046 048 046 048 046 048 058 055 049 055 050
+Player.cpp 344: exception occurred, reason:
+Player.cpp 448: exception occurred, reason:
+Control.cpp 2178: exception occurred (MessageType: 0 MaW: 41A1B88 MoW: 0), reason:
+Control.cpp 2173: exception occurred, reason:
+Control.cpp 539: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 133: exception occurred (Surface = 1), reason:
+GUI.cpp 1825: exception occurred (Surface = 1), reason:
+MapWindow.cpp 985: exception occurred (Surface = 1), reason:
+MapWindow.cpp 558: exception occurred (Obj = 18839), reason:
+MapWindow.cpp 1323: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1315: exception occurred (EffectNumber = 34) (Type = 60), reason:
+Objects.cpp 1280: exception occurred (Number = 60), reason:
+Container.h 230: index out of range (original i: 60, i: 59, min: 1, d: 54)
+Comment: 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="event" message="The Water Kingdom King is here in CarcooIzx City! Do your best before he destroys our temple!" />
+	<announce delay="25000" type="event" message="Obujos attack continues!" />
+
+	<!-- Single spawns -->
+	<singlespawn delay="1000" name="Obujos" x="1000" y="1013" z="7" />
+</raid>

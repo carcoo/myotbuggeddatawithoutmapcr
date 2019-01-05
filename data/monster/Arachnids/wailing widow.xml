@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wailing Widow" nameDescription="a wailing widow" race="venom" experience="6272500000" speed="520" manacost="0">
+	<health now="450000000" max="450000000" />
+	<look type="347" corpse="11310" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="98" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-3500000" max="-3600000" />
+		<attack name="drunk" interval="2000" chance="50" range="7" radius="4" target="0" duration="5000">
+			<attribute key="areaEffect" value="rednote" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="50" radius="3" target="0" min="-3500000" max="-3600000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="earth" interval="2000" chance="50" range="7" min="-3500000" max="-3600000">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="11000" chance="80" min="44000000" max="54000000">
+			<attribute key="areaEffect" value="whitenote" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="820" duration="5000">
+			<attribute key="areaEffect" value="yellownote" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="9971" countmax="90" chance="100000" /><!-- gold coin -->
+		<item id="6527" countmax="3" chance="90000" /><!-- gold coin -->
+		<item id="11328" chance="2950" /><!-- widow's mandibles -->
+		<item id="2510" chance="854" /><!-- plate shield -->
+		<item id="2796" chance="908" /><!-- green mushroom -->
+		<item id="11329" chance="300" /><!-- wailing widow's necklace -->
+		<item id="2381" chance="1460" /><!-- halberd -->
+	</loot>
+</monster>

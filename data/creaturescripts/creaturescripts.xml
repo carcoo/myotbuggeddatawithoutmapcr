@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+    <!-- Team Battle -->
+    <event type="login" name="teambattle_login" script="teambattle.lua"/>   
+    <event type="healthchange" name="teambattle_stats" script="teambattle.lua"/>    
+    <event type="preparedeath" name="teambattle_death" script="teambattle.lua"/>
+<!-- 		<event type="login" name="FragsGuildLogin" script="GuildFragsLogin.lua"/>
+		<event type="kill" name="FragsGuildKill" script="GuildFragsKill.lua"/> -->
+<event type="healthchange" name="hpChange" script="woe.lua"/>
+    <event type="login" name="SlotLogin" script="slot.lua"/>
+<!--     <event type="modalwindow" name="skillPoints_modal" script="sp.lua"/>
+    <event type="advance" name="skillPoints_advance" script="sp.lua"/>
+    <event type="login" name="skillPoints_register" script="sp.lua"/> -->
+    <event type="prepareDeath" name="fire_event" script="fs.lua"/>
+	<event type="login" name="PlayerLogin" script="login.lua" />
+	<event type="login" name="OFFMSG" script="offlinemessages.lua" />
+	<event type="login" name="GetVIP" script="getvip.lua" />
+	<event type="login" name="GetSVIP" script="getsvip.lua" />
+	<event type="login" name="GetLoot" script="getloot.lua" />
+    <event type="kill" name="AntiBot" script="antibot.lua" />
+    <event type="kill" name="Missions" script="killmissions.lua"/>
+    <event type="kill" name="QuestK" script="questkill.lua"/>
+    <event type="kill" name="taskSystem" script="tasksystem.lua"/>
+    <event type="login" name="Looter" event="script" value="Looter.lua"/>
+	<event type="logout" name="PlayerLogout" script="logout.lua" />
+	<event type="logout" name="conditionlogout" script="conditionlog.lua" />
+    <event type="death" name="ArenaEvent" script="arenaevent.lua"/>
+    <event type="death" name="JokerDeath" script="jokerdeath.lua"/>
+	<event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />
+	<event type="kill"  name="ZombieArenaKill" script="zombie_arena/kill.lua" />
+    <event type="death" name="ZombieArenaDeath" script="zombie_arena/death.lua" />
+    <event type="logout" name="ZombieArenaLogout" script="zombie_arena/logout.lua" />
+    <event type="advance" name="AdvanceSave" script="advance_save.lua" />
+	<event type="login" name="FirstItems" script="firstitems.lua" />
+	<event type="login" name="OfflineTraining" script="offlinetraining.lua" />
+	<event type="kill" name="AutoLoot" script="autoloot.lua" />
+	<event type="kill" name="Bloot" script="bloot.lua" />
+	<event type="death" name="PlayerDeath" script="playerdeath.lua" />
+	<event type="death" name="DropLoot" script="droploot.lua" />
+	<event type="extendedopcode" name="ExtendedOpcode" script="extendedopcode.lua" />
+    <event type="death" name="TWDDeath" script="twdEvent/twdDeath.lua"/>
+    <event type="preparedeath" name="TWDOnLose" script="twdEvent/twdOnLose.lua"/>
+    <event type="modalwindow" name="TWDBuildWindow" script="twdEvent/twdBuildWindow.lua"/>
+    <event type="modalwindow" name="TWDOtherWindow" script="twdEvent/twdOtherWindow.lua"/>
+    <event type="healthchange" name="TWDHealthChange" script="twdEvent/twdHealthChange.lua"/>
+<!-- 	<event type="death" name="BossDeath" script="boss.lua" />
+	<event type="healthchange" name="BossParticipation" script="boss.lua" />
+	<event type="think" name="BossThink" script="boss.lua" /> -->
+	<event type="think" name="condition" script="condition.lua" />
+</creaturescripts>

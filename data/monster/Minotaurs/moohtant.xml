@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Moohtant" nameDescription="a moohtant" race="blood" experience="33500000" speed="500" manacost="0">
+	<health now="21000000" max="21000000" />
+	<look type="607" corpse="23367" />
+	<targetchange interval="2000" chance="3" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-1050000" max="-1450000" />
+		<attack name="physical" interval="1000" chance="40" length="3" spread="0" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="groundshaker" />
+		</attack>
+		<attack name="physical" interval="1000" chance="50" radius="3" target="0" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="groundshaker" />
+		</attack>
+		<attack name="physical" interval="1000" chance="40" radius="5" target="0" min="-1050000" max="-1250000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="physical" interval="1000" chance="50" range="7" target="1" radius="4" min="-1050000" max="-1250000">
+			<attribute key="shootEffect" value="largerock" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+	</defenses>
+	<elements>
+		<element energyPercent="1" />
+		<element icePercent="15" />
+		<element firePercent="1" />
+		<element deathPercent="1" />
+	</elements>
+	<voices interval="2000" chance="5">
+		<voice sentence="MOOOOH!" yell="1" />
+		<voice sentence="Grrrr." />
+		<voice sentence="Raaaargh!" />
+	</voices>
+	<loot>
+		<item id="2160" countmin="10" countmax="90" chance="100000" />	<!-- gold coin -->
+		<item id="5878" countmax="1" chance="4110" />		<!-- minotaur leather -->
+		<item id="2214" chance="2410" />						<!-- ring of healing -->
+		<item id="5911" countmax="1" chance="900" />		<!-- red piece of cloth -->
+		<item id="23544" chance="860" />					<!-- moohtant cudgel -->
+		<item id="2154" chance="710" />						<!-- yellow gem -->
+		<item id="7401" chance="280" />						<!-- minotaur trophy -->
+	</loot>
+</monster>

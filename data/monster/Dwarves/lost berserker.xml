@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Berserker" nameDescription="a lost berserker" race="blood" experience="667500" speed="400" manacost="0">
+	<health now="22000000" max="22000000" />
+	<look type="496" corpse="17416" />
+	<targetchange interval="4000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="45" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-500000" max="-550000" />
+		<attack name="physical" interval="2000" chance="70" range="7" min="-500000" max="-550000">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+		</attack>
+		<attack name="physical" interval="2000" chance="70" range="7" target="1" radius="3" min="-500000" max="-550000" >
+			<attribute key="shootEffect" value="explosion" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+		<attack name="physical" interval="2000" chance="70" radius="5" target="0" spread="0" min="-500000" max="-550000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="speed" interval="2000" chance="10" radius="2" target="0" spread="0" speedchange="-800" duration="20000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="drunk" interval="2000" chance="10" target="1" radius="4" duration="6000">
+			<attribute key="areaEffect" value="stun" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="invisible" interval="2000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="teleport" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="Kill! Kill! Kill!" />
+		<voice sentence="Death! Death! Death!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="100" chance="100000" /><!-- Gold Coin -->
+		<item id="18436" countmax="10" chance="8210" /><!-- drill bolts -->
+		<item id="2430" chance="2070" /><!-- knight axe -->
+		<item id="11339" chance="930" /><!-- clay lump -->
+		<item id="7427" chance="550" /><!-- chaos mace -->
+		<item id="2528" chance="1002" /><!-- tower shield -->
+		<item id="7886" chance="640" /><!-- terra boots -->
+		<item id="2432" chance="380" /><!-- fire axe -->
+		<item id="2498" chance="150" /><!-- Royal helmet -->
+	</loot>
+</monster>

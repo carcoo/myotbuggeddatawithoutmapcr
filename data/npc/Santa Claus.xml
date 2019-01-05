@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Santa Claus" script="santa.lua" walkinterval="0" speed="100" walkradius="0" floorchange="0">
+	<health max="100" now="100"/>
+	<look type="634" head="0" body="94" legs="94" feet="0" addons="3" mount="644"/>
+	<parameters>
+		<parameter key="message_greet" value="Merry Christmas |PLAYERNAME|. I'm Santa Claus. I got {present}s for good children."/>
+	</parameters>
+</npc>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gaz'Haragoth" nameDescription="Gaz'Haragoth" race="undead" experience="8572500000" speed="400" manacost="0">
+	<health now="800000000" max="800000000" />
+	<look type="591" head="0" body="94" legs="79" feet="79" corpse="22562" />
+	<targetchange interval="10000" chance="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag staticattack="98" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="750" min="4000000" max="-4100000" />
+		<attack name="ice" interval="3000" chance="55" range="7" radius="7" target="1" min="-4000000" max="-4100000">
+			<attribute key="shootEffect" value="ice" />
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="melee" interval="1800" chance="50" range="7" radius="5" target="0" min="-4000000" max="-4100000">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="fire" interval="3000" chance="50" length="8" spread="0" min="-4000000" max="-4100000">
+			<attribute key="areaEffect" value="fire" />
+		</attack>
+		<attack name="physical" interval="2500" chance="50" range="7" radius="5" target="0" min="-4000000" max="-4100000">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="3000" chance="35" min="60000000" max="65000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="4000" chance="80" speedchange="500" duration="6000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<voices interval="5000" chance="30">
+		<voice sentence="Gaz'haragoth begins to channel DEATH AND DOOM into the area! RUN!" yell="1" />
+		<voice sentence="Minions! Follow my call!" yell="1" />
+		<voice sentence="I've beaten tougher demons then you even know" yell="1" />
+		<voice sentence="You puny humans will be my snacks!" yell="1" />
+		<voice sentence="Gaz'haragoth calls down: DEATH AND DOOM!" yell="1" />
+	</voices>
+	<loot>
+		<item id="9971" countmax="100" chance="100000" /> <!-- Platinum Coin -->
+		<item id="9971" countmax="20" chance="50000" /> <!-- Crystal Coins -->
+		<item id="24115" countmax="4" chance="50000" /> <!-- Crystal Coins -->
+		<item id="11259" countmax="2" chance="50000" /> <!-- Crystal Coins -->
+		<item id="2158" countmax="2" chance="10000" /> <!-- Blue Gem -->
+		<item id="15408" countmax="1" chance="1000" /> <!-- Crystal Coins -->
+		<item id="18416" countmax="10" chance="10000" /> <!-- Green Crystal Splinter -->
+		<item id="18414" countmax="15" chance="10000" /> <!-- Violet Crystal Shard -->
+		<item id="22612" chance="500" /> <!-- Demonic Tapestry -->
+		<item id="22608" chance="500" /> <!-- Nightmare Horn -->
+		<item id="22611" chance="500" /> <!-- Psychedelic Tapestry -->
+		<item id="11262" chance="500" /> <!-- Solitude Charm -->
+		<item id="11261" chance="500" /> <!-- Twin Sun Charm -->
+		<item id="11258" chance="100" /> <!-- Phoenix Charm -->
+	</loot>
+</monster>

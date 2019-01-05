@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellflayer" nameDescription="a hellflayer" race="blood" experience="5550000000" speed="410" manacost="0">
+	<health now="750000000" max="750000000" />
+	<look type="856" corpse="25440" />
+	<targetchange interval="10000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag staticattack="90" />
+		<flag targetdistance="3" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="400" min="-3000000" max="-3100000" />
+		<attack name="lifedrain" interval="700" chance="100" range="7" target="1" min="-3100000" max="-3200000">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+		<attack name="renegade knight" interval="2000" chance="20"/>
+		<attack name="choking fear drown" interval="2000" chance="20" />
+		<attack name="death" interval="1000" chance="70" radius="4" target="0" min="-10000000" max="-10000000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="lifedrain" interval="1400" chance="60" length="8" spread="0" min="-10000000" max="-10000000">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="manadrain" interval="900" chance="100" range="8" target="1" min="-25000000" max="-26000000">
+			<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="manadrain" interval="500" chance="100" range="8" target="1" min="-25000000" max="-26000000">
+			<attribute key="shootEffect" value="ice" />
+		</attack>
+		<attack name="lifedrain" interval="3000" chance="60" range="7" target="1" min="-2500000" max="-2600000">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="fireattack" />
+		</attack>
+		<attack name="warlock skill reducer" range="5" interval="2000" chance="25" />
+		
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="8000" chance="100" min="190000000" max="200000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="-10" />
+	</elements>
+		
+	<voices interval="3000" chance="50">
+		<voice sentence="You should consider bargaining for you life!" />
+		<voice sentence="Your tainted soul belongs to us anyway!" />
+	    <voice sentence="Today I deal only in death!" />
+       			
+	</voices>
+	<loot>
+	    <item id="21401" chance="5000" /><!-- remover  -->
+		<item id="24714" chance="5000" /><!-- upgrader  -->
+	    <item id="24115" chance="5000" /><!-- buffer  -->
+		<item id="9971" countmax="4" chance="100000" />	<!-- gold coin -->
+		<item id="13567" chance="8000" /><!-- doll  -->
+		<item id="13559" chance="8000" /><!-- doll  -->
+		<item id="24332" chance="1000" /><!-- doll  -->
+        <item id="11264" chance="15000" /><!-- tap  -->		
+		<item id="6558" countmax="1" chance="5000" />	<!-- Concentrated Demonic Blood -->
+		<item id="6527" chance="7000" />		
+	</loot>
+</monster>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talkactions>
+    <talkaction words="!teambattle" script="teambattle.lua"/>
+	<talkaction words="!buypremium" separator=" " script="buyprem.lua" />
+    <talkaction words="!bless" separator=" " script="bless.lua" />
+	<talkaction words="/bg" separator=" " script="bg.lua" />
+	<talkaction words="!go" separator=" " script="gcolor.lua" />
+    <talkaction words="!rank" separator=" " script="rank.lua"/>
+    <talkaction words="!war" separator=" " script="gwar.lua" />
+	<talkaction words="!commands" separator=" " script="commands.lua" />
+	<talkaction words="!read" separator=" " script="oflinemsg.lua" />
+	<talkaction words="!msg" separator=" " script="oflinemsg.lua" />
+	<talkaction words="!deletemsg" separator=" " script="oflinemsg.lua" />
+	<talkaction words="!poutfit" script="party outfit.lua"/>
+	<talkaction words="!buyhouse" script="buyhouse.lua" />
+	<talkaction words="!myinfo" script="infoo.lua" />
+    <talkaction words="!deposit" separator=" " script="banking.lua" />
+    <talkaction words="!withdraw" separator=" " script="banking.lua" />
+    <talkaction words="!balance" separator=" " script="banking.lua" />
+    <talkaction words="!transfer" separator=" " script="banking.lua" />
+	<talkaction words="!autoloot" separator=" " script="autoloot.lua"/>
+	<talkaction words="!level" script="level.lua" />
+	<talkaction words="!shop" separator=" " script="znoteshop.lua"/>
+	<talkaction words="!report" separator=" " script="report.lua"/>
+    <talkaction words="!answer" separator=" " script="trivia.lua"/>
+	<talkaction words="!spells" separator=" " script="spells.lua" />
+	<talkaction words="!leavehouse" script="leavehouse.lua" />
+	<talkaction words="!setname" separator=" " script="setname.lua" />
+	<talkaction words="!changesex" separator=" " script="changesex.lua" />
+	<talkaction words="!uptime" separator=" " script="uptime.lua" />
+	<talkaction words="!frags" separator=" " script="frags.lua" />
+	<talkaction words="!deathlist" separator=" " script="deathlist.lua" />
+	<talkaction words="!kills" separator=" " script="kills.lua" />
+	<talkaction words="!online" separator=" " script="online.lua" />
+	<talkaction words="!serverinfo" separator=" " script="serverinfo.lua" />
+ 	<talkaction words="!cast" separator=" " script="start_cast.lua" />
+	<talkaction words="!stopcast" script="stop_cast.lua" />
+	<talkaction words="!aol" script="aol.lua" />
+	<talkaction words="!addon" script="addon.lua" />
+	<talkaction words="!backpack" script="backpack.lua" />
+	<talkaction words="!shovel" script="shovel.lua" />
+	<talkaction words="!rope" script="rope.lua" />
+	<talkaction words="!mana" script="mana.lua" />
+	<talkaction words="!uh" script="uh.lua" />
+		<talkaction words="!vip" script="vip.lua" />
+	<talkaction words="!loot" script="lootingc.lua" />
+
+</talkactions>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kollos" nameDescription="a kollos" race="venom" experience="570000000" speed="600" manacost="0">
+	<health now="280000000" max="280000000" />
+	<look type="458" corpse="15354" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+		<flag staticattack="90" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1200" min="-2000000" max="-2100000" />
+		<attack name="physical" interval="2000" chance="80" target="1" range="7" radius="3" min="-2000000" max="-2100000">
+			<attribute key="shootEffect" value="explosion" />
+			<attribute key="areaEffect" value="explosion" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="4000" chance="80" min="90000000" max="100000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<voices interval="2000" chance="7">
+		<voice sentence="Zopp!" />
+		<voice sentence="Flzlzlzlzlzlz!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="48" chance="100000" /><!-- gold coin -->
+		<item id="2159" countmax="5" chance="100000" /><!-- gold coin -->
+		<item id="2160" countmax="50" chance="66000" /><!-- platinum coin -->
+		<item id="15480" chance="15390" /><!-- kollos shell -->
+		<item id="15486" chance="15720" /><!-- compound eye -->
+		<item id="15648" countmax="5" chance="10210" /><!-- tarsal arrow -->
+		<item id="2147" countmax="2" chance="8180" /><!-- small ruby -->
+		<item id="7632" chance="2600" /><!-- giant shimmering pearl -->
+		<item id="15492" chance="700" /><!-- hive scythe -->
+		<item id="2645" chance="130" /><!-- steel boots -->
+		<item id="15491" chance="310" /><!-- carapace shield -->
+		<item id="18559" chance="1000" /> <!-- adventurer stone -->
+		<item id="25521" chance="1000" /> <!-- adventurer stone -->
+	</loot>
+</monster>

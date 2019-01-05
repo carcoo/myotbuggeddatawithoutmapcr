@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spitter" nameDescription="a spitter" race="venom" experience="1500000" speed="370" manacost="0">
+	<health now="3500000" max="3500000" />
+	<look type="461" corpse="15392" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-100000" max="-125000" />
+		<attack name="earth" interval="500" chance="80" range="7" radius="3" min="-100000" max="-125000" >
+			<attribute key="areaEffect" value="poison" />
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+		<attack name="poisoncondition" interval="500" chance="80" radius="5" target="0" min="-100000" max="-125000" />
+	</attacks>
+	<defenses armor="20" defense="20">
+	</defenses>
+	<elements>
+		<element firePercent="5" />
+		<element energyPercent="-5" />
+		<element deathPercent="5" />
+		<element icePercent="-5" />
+	</elements>
+	<voices interval="500" chance="7">
+		<voice sentence="Spotz!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="60" chance="60000" />	<!-- gold coin -->
+		<item id="2152" chance="75250" />					<!-- platinum coin -->
+		<item id="15481" chance="18000" />					<!-- spitter nose -->
+		<item id="15486" chance="15000" />					<!-- compound eye -->
+		<item id="2150" countmax="2" chance="8100" />		<!-- small amethyst -->
+		<item id="7590" chance="7800" />						<!-- great mana potion -->
+		<item id="2789" countmax="3" chance="7500" />		<!-- brown mushroom -->
+	</loot>
+</monster>

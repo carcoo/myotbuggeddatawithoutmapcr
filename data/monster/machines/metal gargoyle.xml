@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Metal Gargoyle" nameDescription="a metal gargoyle" race="energy" experience="2350000" speed="210" manacost="0">
+	<health now="6000000" max="6000000" />
+	<look type="601" corpse="23347" />
+  <targetchange interval="500" chance="5" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="500" min="-240000" max="-280000" />
+    <attack name="death" interval="500" chance="40" length="8" spread="0" min="-240000" max="-280000">
+		<attribute key="areaEffect" value="yellowenergy" />
+    </attack>
+	<attack name="death" interval="500" chance="50" target="1" range="7" radius="3" min="-240000" max="-280000">
+		<attribute key="areaEffect" value="mortarea" />
+		<attribute key="shootEffect" value="suddendeath" />
+    </attack>
+    <attack name="metal gargoyle curse" interval="500" chance="0" />
+  </attacks>
+  <defenses armor="21" defense="42" />
+  <elements>
+    <element firePercent="10" />
+    <element energyPercent="-10" />
+	<element icePercent="-5" />
+    <element physicalPercent="10" />
+    <element deathPercent="10" />
+  </elements>
+	<voices interval="500" chance="5">
+		<voice sentence="*click*" />
+		<voice sentence="*clonk*" />
+		<voice sentence="*stomp*" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="90" chance="100000" /><!-- gold coin -->
+		<item id="8204" chance="10000" /><!-- magic sulphur -->
+		<item id="25378" countmax="2" chance="20000" /><!-- bronze Token -->
+	</loot>
+</monster>

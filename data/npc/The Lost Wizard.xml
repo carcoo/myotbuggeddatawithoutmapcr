@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="The Lost Wizard" script="quest.lua" walkinterval="2000" speed="100" walkradius="0" floorchange="0" speechbubble="3">
+	<health max="100" now="100"/>
+	<look type="130" head="0" body="114" legs="114" feet="114" addons="3" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, I have been lost here for months and you are here lost too, I can't use my power because Abyssador is still alive and the only way to go out of here is to kill {Abyssador} then I will use my power to teleport us back to CarcooIzx City, do you accept this {quest}?, if you died i can {teleport} you again."/>
+	</parameters>
+</npc>

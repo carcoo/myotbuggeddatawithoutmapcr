@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zulazza The Corruptor" nameDescription="Zulazza The Corruptor" race="blood" experience="9650000000" speed="450" manacost="0">
+	<health now="900000000" max="900000000" />
+	<look type="334" corpse="11107" />
+	<targetchange interval="2000" chance="5" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="98" />
+		<flag runonhealth="0" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="500" min="-6600000" max="-6800000" />
+		<attack name="physical" interval="2000" chance="40" length="8" spread="0" min="-6600000" max="-6800000">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="poison" interval="2000" chance="50" radius="3" target="0" min="-6600000" max="-6800000">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="physical" interval="2000" chance="40" range="7" target="1" min="-6600000" max="-6800000">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+		<attack name="speed" interval="2000" chance="20" range="7" speedchange="-500" duration="20000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="96" defense="119">
+		<defense name="healing" interval="8000" chance="70" min="210000000" max="215000000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="2000" chance="10">
+		<voice sentence="I'm Zulazza, and you won't forget me that fazzt." />
+		<voice sentence="Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!" />
+	</voices>
+	<loot>
+		<item id="9971" countmax="100" chance="100000" /> <!-- Platinum Coin -->
+		<item id="9971" countmax="30" chance="50000" /> <!-- Crystal Coins -->
+		<item id="24115" countmax="2" chance="30000" /> <!-- Platinum Coin -->
+		<item id="9971" countmax="10" chance="50000" /> <!-- Crystal Coins -->
+		<item id="5880" countmax="30" chance="100000" /><!-- dragon scale boots -->
+		<item id="5944" countmax="4" chance="19250" /><!-- soul orb -->
+		<item id="2528" chance="15500" /><!-- tower shield -->
+		<item id="7366" countmax="67" chance="8100" /><!-- viper star -->
+		<item id="7632" countmax="2" chance="28000" /><!-- giant shimmering pearl -->
+		<item id="2154" chance="15500" /><!-- yellow gem -->
+		<item id="2156" chance="10500" /><!-- red gem -->
+		<item id="7440" chance="10500" /><!-- mastermind potion -->
+		<item id="2153" chance="25500" /><!-- violet gem -->
+		<item id="7590" chance="20500" /><!-- great mana potion -->
+		<item id="8882" chance="5500" /><!-- earthborn titan armor -->
+		<item id="2514" chance="5500" /><!-- mastermind shield -->
+		<item id="2127" chance="10500" /><!-- emerald bangle -->
+		<item id="8891" chance="5500" /><!-- paladin armor -->
+		<item id="2515" chance="5500" /><!-- guardian shield -->
+	</loot>
+</monster>
